@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Nova+Square&family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --corFundoBody: #121212;
+    --corFundoForm: #474747;
+    --corTextoLogo: #ffffff;
+    --corBotaoEntrar: none;
+    --borderInput: #a8a7a7;
+}
+
+.backgroundBody{
+    background-color: var(--corFundoBody);
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.transfForm{
+    width: 500px;
+    background-color: var(--corFundoForm);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.textLogo {
+    display: flex;
+    align-items: center;
+}
+
+.logoTitle,
+.logoTitle2 {
+    color: var(--corTextoLogo);
+}
+
+.logoTitle {
+    font-family: "Passion One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.logoTitle2{
+    font-family: "Bungee Hairline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+
+#valorTransf, #destinatario, #senha{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid var(--borderInput);
+    padding: 5px;
+    background-color: var(--corFundoForm);
+    color: var(--corTextoLogo);
+    margin-bottom: 15px;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 0;
+}
+
+#valorTransf::placeholder, #destinatario::placeholder, #senha::placeholder{
+    font-size: 15px;
+}
+
+label{
+    width: 100%;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--corTextoLogo);
+}
+
+.enviar{
+    width: 100%;
+    background-color: var(--corBotaoEntrar);
+    border: 3px solid var(--borderInput);
+    padding: 5px;
+    color: var(--corTextoLogo);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background-color: var(--borderInput);
+    color: var(--corFundoBody);
+}

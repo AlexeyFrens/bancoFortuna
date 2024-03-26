@@ -78,6 +78,8 @@
 }
 
 .conteudoContent{
+    display: flex;
+    flex-wrap: wrap;
     max-width: 109vh;
     padding: 50px;
 }

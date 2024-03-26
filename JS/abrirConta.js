@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
     $(".buttonForm").click(function () {
         var nome = $("#nome").val();
